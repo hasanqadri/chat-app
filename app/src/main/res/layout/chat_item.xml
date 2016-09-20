@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#ea1a1717"
+    app:layout_behavior = "@string/appbar_scrolling_view_behavior"
+    >
+
+    <!-- View for the message content-->
+        <TextView
+            android:id="@+id/message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message Content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_14sp"
+            android:layout_marginBottom="@dimen/pad_20dp"
+            android:maxLines="4"
+            />
+
+    <!-- View for the senders name-->
+        <TextView
+            android:id="@+id/sender_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sender Name"
+            android:textColor="@color/white"
+            android:layout_gravity="right" />
+</LinearLayout>
